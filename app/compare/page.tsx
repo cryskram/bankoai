@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { DiVim } from "react-icons/di";
 import { IoSend } from "react-icons/io5";
 
 const ComparatorPage = () => {
@@ -13,7 +12,7 @@ const ComparatorPage = () => {
   const handleSend = () => {
     setLoading(true);
     setResult("");
-    const timer = setTimeout(() => {
+    setTimeout(() => {
       setLoading(false);
       setResult(
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc laoreet efficitur felis semper faucibus. Donec in orci leo. Pellentesque et tellus a purus pulvinar efficitur sit amet sit amet tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed ac eros quam. Vivamus posuere, erat ultricies rhoncus placerat, nisl augue ornare est, sed ullamcorper nisl ipsum sit amet lacus. Mauris justo est, mollis eu venenatis tristique, consectetur in mi. Etiam vitae nunc risus."

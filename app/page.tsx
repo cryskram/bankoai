@@ -18,7 +18,7 @@ export default function Home() {
             <h1 className="text-2xl md:text-3xl font-black uppercase text-mBlack ">
               General
             </h1>
-            <p className="w-1/2 text-center mt-4 text-base md:text-xl font-medium">
+            <p className="w-3/4 text-center mt-4 text-base md:text-xl font-semibold">
               Get personalized guidance on all your banking queries and
               services.
             </p>
@@ -31,7 +31,7 @@ export default function Home() {
           <h1 className="text-2xl md:text-3xl font-black uppercase text-white group-hover:text-mBlack">
             comparator
           </h1>
-          <p className="w-1/2 text-center mt-4 text-base md:text-xl font-medium">
+          <p className="w-3/4 text-center mt-4 text-base md:text-xl font-semibold">
             Compare banking options side-by-side for quick and informed
             decisions.
           </p>
