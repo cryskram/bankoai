@@ -1,17 +1,9 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
+import { FaHeart, FaRegHeart } from "react-icons/fa6";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,9 +18,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${montserrat.className} bg-mBlack text-white flex flex-col min-h-screen`}
       >
-        {children}
+        <main className="flex-grow">{children}</main>
+        <footer className="w-full bg-mOrange text-center p-4 text-black fixed bottom-0">
+          <p className="inline-flex items-center gap-2 text-mBlack font-extrabold">
+            Made with <FaRegHeart size={22} /> by Autoencoders
+          </p>
+        </footer>
       </body>
     </html>
   );
